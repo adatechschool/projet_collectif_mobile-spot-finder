@@ -87,10 +87,6 @@ export default function NewAddress({
 
       console.log("Favorite successfully registered:", newFavorite);
 
-      // if (newFavorite) {
-      //   updateAddresses(newFavorite);
-      // }
-
       navigation.navigate("Home");
     } catch (error) {
       console.error(error);

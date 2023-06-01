@@ -50,10 +50,6 @@ function Map({ session, profile, addresses, tag, setAddresses }) {
     });
   };
 
-  const updateAddresses = (newAddress) => {
-    setAddresses((prevAddresses) => [...prevAddresses, newAddress]);
-  };
-
   return (
     <Stack.Navigator
       initialRouteName="Home"
@@ -87,9 +83,9 @@ function Map({ session, profile, addresses, tag, setAddresses }) {
             session={session}
             profile={profile}
             addresses={addresses}
+            setAddresses={setAddresses}
             toggleModal={toggleModal}
             isModalVisible={isModalVisible}
-            updateAddresses={updateAddresses}
           />
         )}
       </Stack.Screen>
@@ -193,7 +189,6 @@ export default function App() {
           if (error) {
             throw new Error(error.message);
           }
-
           setAddresses(data);
         }
       } catch (error) {
