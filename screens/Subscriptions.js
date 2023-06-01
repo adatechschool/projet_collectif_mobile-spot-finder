@@ -147,30 +147,29 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 10,
     padding: 25,
-    width: "50%",
+    width: "45%",
     alignItems: "center",
     backgroundColor: "#2e3e39",
   },
   buttonText: {
-    color: "#CFFF8D",
+    color: "#CFFF8D"
   },
   subscribersList: {
-    backgroundColor: "#FFFAF0",
+    backgroundColor: "#425F57",
     flex: 2,
-    marginTop: -20,
     borderBottomWidth: 2,
     borderRadius: 10,
     width: "100%",
   },
   titleContainer: {
     width: "100%",
-    height: 40,
+    height: 50,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#2e3e39",
     padding: 4,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
+    // borderTopLeftRadius: 10,
+    // borderTopRightRadius: 10,
   },
   title: {
     color: "#CFFF8D",
@@ -189,7 +188,8 @@ const styles = StyleSheet.create({
     borderColor: "#CFFF8D",
   },
   subscribersNamesText: {
-    color: "#425F57",
+    color: "#CFFF8D",
+    fontWeight: 'bold',
     fontSize: 18,
   },
   subscribedContainer: {
